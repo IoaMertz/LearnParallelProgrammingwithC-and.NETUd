@@ -9,3 +9,19 @@
 
 4) Tasks can report their state
 	>task.IsCompleted, task.IsFaulted, ..
+
+Cancellation 
+right way with token.ThrowIfCancellationRequested(), throw -> OperrationCanceledException 
+and the task.status == canceled
+
+token.WaitHandle.WaitOne(mseconds)
+SpinWait()
+
+
+Waiting for several task
+Task.WaitAll()
+Task.WaitAny()
+
+WaitAny/WaitAll() -> thows an exception if canceled
+
+AggregateException

@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SummaryTaskProgramming.txt = SummaryTaskProgramming.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section1", "Section1", "{5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95F41215-83B2-4B31-9AF4-B211C32E5C28} = {5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}
+		{BF18758A-83E4-46DD-A855-0EA1C974ED3D} = {5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}
+		{40324F26-03ED-4ED6-9E49-6DE244FE5CE5} = {5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}
+		{AF135F1D-2246-40B5-9736-91976CFD1D14} = {5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}
+		{EAA7057F-843E-4E0C-898C-2E02B6D166E8} = {5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}
+		{BB8B900A-EDA6-4086-9AA3-822103D5D875} = {5C88C40A-6A6B-46DD-9B7F-6C90EC5B201B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88AA1F38-A3C0-472B-9983-774E9CA19F15}
