@@ -1,0 +1,11 @@
+1) Task is a unit of work that takes a function
+	> new Task(function) , t.Start()
+	> Task.Factory.StartNew(function)
+
+2) Tasks can be passed an object
+
+3) Tasks can return values
+	> new Task<T>, task.Result (this awaits for the task)
+
+4) Tasks can report their state
+	>task.IsCompleted, task.IsFaulted, ..
