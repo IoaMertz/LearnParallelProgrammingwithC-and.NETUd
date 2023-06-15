@@ -1,1 +1,16 @@
 > Atomic is an operation if it CANNOT be interrupted
+
+
+Lock Keyword Gtp : The lock statement requires an object that serves as the lock. This object is typically a private instance variable or a dedicated object specifically created for locking purposes.
+
+When a thread encounters the lock statement, it first checks if the lock object is currently being held by another thread. If the lock is already acquired, the thread will wait until the lock is released before proceeding.
+
+If the lock object is not currently held by any thread, the executing thread acquires the lock, enters the critical section, and executes the code within it.
+
+Once the thread finishes executing the critical section, it releases the lock, allowing other waiting threads to proceed.
+
+The lock keyword ensures that only one thread can execute the critical section at a time, thereby preventing race conditions where multiple threads may try to access or modify shared data simultaneously, leading to unpredictable or incorrect results.
+
+It's important to note that the lock keyword should be used consistently by all threads that access the shared resource. If multiple sections of code need to be protected, they should all use the same lock object to ensure proper synchronization.
+
+By using the lock keyword appropriately, you can enforce thread safety and prevent data corruption or inconsistencies when multiple threads are accessing shared resources in C#.

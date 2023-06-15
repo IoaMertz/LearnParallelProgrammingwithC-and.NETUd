@@ -1,34 +1,42 @@
-﻿using System.Reflection.PortableExecutable;
-
-namespace CriticalSections
+﻿namespace InterLocked
 {
     internal class Program
     {
         public class BankAccount
         {
             public object padlock = new object();
-            
 
-            public int Balance { get; private set; }
+            private int balance;
+            public int Balance
+            {
+                get { return balance; }
+                private set { balance = value; }
+            }
 
             public void Deposite(int amount)
             {
-                lock(padlock) //only 1 thread can enter
-                {
-                    Balance += amount;
-                }
+                //Interlocked.Add() makes the += opperation atomic.
+                //Balance += amount;
+                Interlocked.Add(ref balance, amount);
+                //this is a shorthand for Thread.MemoryBarrier();
+                Interlocked.MemoryBarrier();
+
+                // the cpu may reorder instructions that you wrote.
+                //it tells that the instruction writen before the memory barrier 
+                //cannot be executed in the block after the memory barrier.
+                Thread.MemoryBarrier();
+
+                
+                
             }
 
             public void Withdraw(int amount)
             {
-                lock (padlock)
-                {
-                    Balance -= amount;
-                }
-
+                 //Balance -= amount;
+                Interlocked.Add(ref balance,-amount);
             }
         }
-        
+
         static void Main(string[] args)
         {
             var tasks = new List<Task>();
