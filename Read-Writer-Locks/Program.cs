@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static ReaderWriterLockSlim padlock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
+        static ReaderWriterLockSlim padlock = new ReaderWriterLockSlim();
         static Random random = new Random();
         static void Main(string[] args)
         {
@@ -14,7 +14,12 @@
                 tasks.Add(Task.Factory.StartNew(() =>
                 {
                     padlock.EnterReadLock();
-                    padlock.EnterReadLock();
+
+                    //this throws an exception because readlock is taken
+                    //padlock.EnterWriteLock();
+
+                    //padlock.EnterUpgradeableReadLock();
+                    
                     Console.WriteLine($"Entered read lock, x = {0}");
                     Thread.Sleep(5000);
 
