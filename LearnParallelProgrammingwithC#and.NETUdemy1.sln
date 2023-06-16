@@ -27,15 +27,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section2", "Section2", "{63
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CriticalSections", "CriticalSections\CriticalSections.csproj", "{75B8B263-206A-4B55-83D3-781559FCAC5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterLocked", "InterLocked\InterLocked.csproj", "{AE6D217B-1CF9-4BD2-83AE-3EB1C182082D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterLocked", "InterLocked\InterLocked.csproj", "{AE6D217B-1CF9-4BD2-83AE-3EB1C182082D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpinLocking", "SpinLocking\SpinLocking.csproj", "{E9611553-33F7-46A0-A251-CAAF8596C30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpinLocking", "SpinLocking\SpinLocking.csproj", "{E9611553-33F7-46A0-A251-CAAF8596C30A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockRecursion", "LockRecursion\LockRecursion.csproj", "{4AD926A8-3839-4274-9C08-57CA8BA71835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LockRecursion", "LockRecursion\LockRecursion.csproj", "{4AD926A8-3839-4274-9C08-57CA8BA71835}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexSection", "Mutex\MutexSection.csproj", "{72C877C4-12D3-44BA-8616-57D58DC9DD66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutexSection", "Mutex\MutexSection.csproj", "{72C877C4-12D3-44BA-8616-57D58DC9DD66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{C8A71BCB-91D9-4564-A8C3-F86B40E14882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{C8A71BCB-91D9-4564-A8C3-F86B40E14882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Read-Writer-Locks", "Read-Writer-Locks\Read-Writer-Locks.csproj", "{EA4CCE9A-1811-4EB7-A883-9B95E0FB8F9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{C8A71BCB-91D9-4564-A8C3-F86B40E14882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8A71BCB-91D9-4564-A8C3-F86B40E14882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8A71BCB-91D9-4564-A8C3-F86B40E14882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA4CCE9A-1811-4EB7-A883-9B95E0FB8F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4CCE9A-1811-4EB7-A883-9B95E0FB8F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4CCE9A-1811-4EB7-A883-9B95E0FB8F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4CCE9A-1811-4EB7-A883-9B95E0FB8F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{4AD926A8-3839-4274-9C08-57CA8BA71835} = {638DC4BE-7C97-44CA-A655-F37A0932D19A}
 		{72C877C4-12D3-44BA-8616-57D58DC9DD66} = {638DC4BE-7C97-44CA-A655-F37A0932D19A}
 		{C8A71BCB-91D9-4564-A8C3-F86B40E14882} = {638DC4BE-7C97-44CA-A655-F37A0932D19A}
+		{EA4CCE9A-1811-4EB7-A883-9B95E0FB8F9C} = {638DC4BE-7C97-44CA-A655-F37A0932D19A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88AA1F38-A3C0-472B-9983-774E9CA19F15}
