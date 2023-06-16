@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentDictionary", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer-Concumer-Pattern", "Producer-Concumer-Pattern\Producer-Concumer-Pattern.csproj", "{CDEAA04A-39CE-4A0C-B58E-D61295AC7F4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section_TaskCoordination", "Section_TaskCoordination", "{849E2CC7-D6A2-4119-8E97-94F4B114B58D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
